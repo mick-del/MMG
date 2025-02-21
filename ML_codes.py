@@ -15,10 +15,10 @@ model_DT_AOP = jb.load('DT_AOP.joblib')
 model_ANN_MLP_AOP = jb.load('ANN_MLP_AOP.joblib')
 model_XGBRF_AOP = jb.load('XGBRF_AOP.joblib')
 model_MLR_AOP = jb.load('LR_AOP.joblib')
-#model_GDB_AOP = jb.load('GDB_AOP.joblib')
+model_GDB_AOP = jb.load('GD_AOP.joblib')
 
 model_ppv = jb.load('Stacked_model_PPV.joblib')
-#model_AOP = jb.load('Stacked_model_AOP (1).joblib')
+model_AOP = jb.load('SM_AOP.joblib')
 if 'historique' not in st.session_state:
     st.session_state.historique = []
 
