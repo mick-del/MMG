@@ -18,7 +18,7 @@ model_MLR_AOP = jb.load('LR_AOP.joblib')
 # model_GDB_AOP = jb.load('GDB_AOP.joblib')
 
 model_ppv = jb.load('Stacked_model_PPV.joblib')
-model_AOP = jb.load('Stacked_model_AOP (1).joblib')
+#model_AOP = jb.load('Stacked_model_AOP (1).joblib')
 if 'historique' not in st.session_state:
     st.session_state.historique = []
 
