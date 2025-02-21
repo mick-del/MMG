@@ -4,21 +4,21 @@ import pandas as pd
 import joblib as jb
 from datetime import datetime
 # Initialisation d'une liste pour stocker l'historique des prédictions
-model_RF_ppv = jb.load('RF_PPV.pkl')
-model_DT_ppv = jb.load('DT_PPV.pkl')
-model_ANN_MLP_ppv = jb.load('ANN_MLP_PPV.pkl')
-model_XGB_ppv = jb.load('XGB_PPV.pkl')
-model_XGBRF_ppv = jb.load('XGBRF_PPV.pkl')
+model_RF_ppv = jb.load('RF_PPV.joblib')
+model_DT_ppv = jb.load('DT_PPV.joblib')
+model_ANN_MLP_ppv = jb.load('ANN_MLP_PPV.joblib')
+model_XGB_ppv = jb.load('XGB_PPV.joblib')
+model_XGBRF_ppv = jb.load('XGBRF_PPV.joblib')
 
-model_RF_AOP = jb.load('RF_AOP.pkl')
-model_DT_AOP = jb.load('DT_AOP.pkl')
-model_ANN_MLP_AOP = jb.load('ANN_MLP_AOP.pkl')
-model_GDB_AOP = jb.load('GDB_AOP.pkl')
-model_XGBRF_AOP = jb.load('XGBRF_AOP.pkl')
-model_MLR_AOP = jb.load('LR_AOP.pkl')
+model_RF_AOP = jb.load('RF_AOP.joblib')
+model_DT_AOP = jb.load('DT_AOP.joblib')
+model_ANN_MLP_AOP = jb.load('ANN_MLP_AOP.joblib')
+model_GDB_AOP = jb.load('GDB_AOP.joblib')
+model_XGBRF_AOP = jb.load('XGBRF_AOP.joblib')
+model_MLR_AOP = jb.load('LR_AOP.joblib')
 
-model_ppv = jb.load('Stacked_model_PPV.pkl')
-model_AOP = jb.load('Stacked_model_AOP (1).pkl')
+model_ppv = jb.load('Stacked_model_PPV.joblib')
+model_AOP = jb.load('Stacked_model_AOP (1).joblib')
 if 'historique' not in st.session_state:
     st.session_state.historique = []
 
