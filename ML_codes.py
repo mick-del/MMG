@@ -216,7 +216,6 @@ def faire_prediction(option):
                         predictions_RF_model_2 = model_RF_AOP.predict(input_data1)
                         predictions_DT_model_2 = model_DT_AOP.predict(input_data1)
                         predictions_XGBRF_model_2 = model_XGBRF_AOP.predict(input_data1)
-                        predictions_GDB_model_2 = model_GDB_AOP.predict(input_data1)
                         predictions_ANN_MLP_model_2 = model_ANN_MLP_AOP.predict(input_data1)
                         predictions_MLR_model_2 = model_MLR_AOP.predict(input_data1)
 
@@ -224,7 +223,7 @@ def faire_prediction(option):
                                                 'XGBRF': predictions_XGBRF_model_1, 'DT': predictions_DT_model_1,
                                                 'ANN_MLP': predictions_ANN_MLP_model_1})
 
-                        new_ID2 = pd.DataFrame({'MLR': predictions_MLR_model_2, 'GDB': predictions_GDB_model_2,
+                        new_ID2 = pd.DataFrame({'MLR': predictions_MLR_model_2,
                                                 'RF': predictions_RF_model_2,
                                                 'XGBRF': predictions_XGBRF_model_2, 'DT': predictions_DT_model_2,
                                                 'ANN_MLP': predictions_ANN_MLP_model_2})
