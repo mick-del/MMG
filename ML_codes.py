@@ -20,7 +20,7 @@ model_MLR_AOP = jb.load('LR_AOP.joblib')
 model_ppv = jb.load('Stacked_model_PPV.joblib')
 model_AOP = jb.load('SM_AOP.joblib')
 scaler = jb.load('scaler.joblib')
-scaler1 = jb.load('scaler1.joblib')
+scaler1 = jb.load('scaler_AOP.joblib')
 if 'historique' not in st.session_state:
     st.session_state.historique = []
 
@@ -397,7 +397,7 @@ def faire_prediction(option):
                     'SD_': [scaled_distance1]
                 })
                 input_data = scaler.transform(input_data)
-                #input_data1 = scaler1.transform(input_data1)
+                input_data1 = scaler1.transform(input_data1)
                 # Prédictions des deux modèles (remplacez par vos modèles)
 
                 predictions_RF_model_1 = model_RF_ppv.predict(input_data)
