@@ -394,7 +394,7 @@ def faire_prediction(option):
                     'Qmax': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
                     'Nholes': [Number_holes],
-                    'SD_': [scaled_distance1]
+                    'Scaled_Dist': [scaled_distance1]
                 })
                 input_data = scaler.transform(input_data)
                 input_data1 = scaler1.transform(input_data1)
