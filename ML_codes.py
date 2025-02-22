@@ -394,10 +394,10 @@ def faire_prediction(option):
                     'Qmax': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
                     'Nholes': [Number_holes],
-                    '   SD_': [scaled_distance1]
+                    'SD_': [scaled_distance1]
                 })
                 input_data = scaler.transform(input_data)
-                input_data1 = scaler1.transform(input_data1)
+                #input_data1 = scaler1.transform(input_data1)
                 # Prédictions des deux modèles (remplacez par vos modèles)
 
                 predictions_RF_model_1 = model_RF_ppv.predict(input_data)
