@@ -104,11 +104,11 @@ def faire_prediction(option):
                         st.success("Prédiction faite avec succès !")
                         input_data = pd.DataFrame({
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'Nholes': Number_holes, 'Scaled_Dist': scaled_distance
+                            'Scaled_Dist': scaled_distance, 'Nholes': Number_holes
                         })
                         input_data1 = pd.DataFrame({
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'Nholes': Number_holes, 'SD_': scaled_distance1
+                            'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
 
                       # Prédictions des deux modèles (remplacez par vos modèles)
@@ -197,12 +197,12 @@ def faire_prediction(option):
                         # Préparer les données pour la prédiction
                         st.success("Prédiction faite avec succès !")
                         input_data = pd.DataFrame({
-                            'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'Nholes': Number_holes, 'Scaled_Dist': scaled_distance
+                            'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
+                            'Scaled_Dist': scaled_distance, 'Nholes': Number_holes
                         })
                         input_data1 = pd.DataFrame({
-                            'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'Nholes': Number_holes, 'SD_': scaled_distance1
+                            'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
+                            'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
 
                         # Prédictions des deux modèles (remplacez par vos modèles)
