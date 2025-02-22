@@ -19,6 +19,7 @@ model_MLR_AOP = jb.load('LR_AOP.joblib')
 
 model_ppv = jb.load('Stacked_model_PPV.joblib')
 model_AOP = jb.load('SM_AOP.joblib')
+scaler = jb.load('scaler.joblib')
 if 'historique' not in st.session_state:
     st.session_state.historique = []
 
