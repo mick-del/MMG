@@ -27,7 +27,7 @@ def afficher_accueil():
 
     st.markdown("<h1 style='text-align: left; color: red;'>MMG GV-AB Predictor</h1>",
         unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/MMG.png", caption="",
+    st.image("https://github.com/mick-del/MMG/blob/main/MMG-min.png", caption="",
              use_container_width=True)
     st.markdown("<h2 style='text-align: center; color: black;'>Bienvenu(e) sur l'application MMG GV-AB Predictor !</h2>",
                 unsafe_allow_html=True)
@@ -41,7 +41,7 @@ def afficher_accueil():
     st.markdown(
         "<p style='text-align: center;'>Utilisez le menu pour naviguer vers de nouvelles prédictions ou consulter l'historique.</p>",
         unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/DJI_0736.JPG", caption="Mine de Kinsevere", use_container_width=True)
+    st.image("https://github.com/mick-del/MMG/blob/main/DJI_0736-min.JPG", caption="Mine de Kinsevere", use_container_width=True)
 
 # Fonction pour faire des prédictions
 def faire_prediction(option):
