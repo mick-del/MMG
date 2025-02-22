@@ -115,7 +115,8 @@ def faire_prediction(option):
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
                             'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
-                        
+                        input_data = scaler.transform(input_data)
+                        input_data1 = scaler1.transform(input_data1)
 
                       # Prédictions des deux modèles (remplacez par vos modèles)
 
@@ -142,7 +143,7 @@ def faire_prediction(option):
 
                         predictions_model_1 = model_ppv.predict(new_ID1)
                         predictions_model_2 = model_AOP.predict(new_ID2)
-                        result = pd.DataFrame({'Stations':Select_recep,'Mine' : option2, 'PPV_Predicted': predictions_model_1, 'AOP_Predicted':predictions_model_2,
+                        result = pd.DataFrame({'Stations':Select_recep,'Mine' : option2, 'PPV_Predicted': predictions_DT_model_1, 'AOP_Predicted':predictions_model_2,
                                                'Date/hour':[datetime.now().strftime("%Y-%m-%d   /  %H:%M:%S")]* len(distances)})
 
                         st.markdown(
@@ -210,7 +211,8 @@ def faire_prediction(option):
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
                             'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
-
+                        input_data = scaler.transform(input_data)
+                        input_data1 = scaler1.transform(input_data1)
                         # Prédictions des deux modèles (remplacez par vos modèles)
 
                         predictions_RF_model_1 = model_RF_ppv.predict(input_data)
@@ -236,7 +238,7 @@ def faire_prediction(option):
 
                         predictions_model_1 = model_ppv.predict(new_ID1)
                         predictions_model_2 = model_AOP.predict(new_ID2)
-                        result = pd.DataFrame({'Stations': Select_recep, 'Mine' : option2,'PPV_Predicted': predictions_model_1,
+                        result = pd.DataFrame({'Stations': Select_recep, 'Mine' : option2,'PPV_Predicted': predictions_DT_model_1,
                                                'AOP_Predicted': predictions_model_2,
                                                'Date/hour': [datetime.now().strftime("%Y-%m-%d   /  %H:%M:%S")] * len(
                                                    distances)})
@@ -303,7 +305,8 @@ def faire_prediction(option):
                             'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
                             'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
-
+                        input_data = scaler.transform(input_data)
+                        input_data1 = scaler1.transform(input_data1)
                         # Prédictions des deux modèles (remplacez par vos modèles)
 
                         predictions_RF_model_1 = model_RF_ppv.predict(input_data)
@@ -329,7 +332,7 @@ def faire_prediction(option):
 
                         predictions_model_1 = model_ppv.predict(new_ID1)
                         predictions_model_2 = model_AOP.predict(new_ID2)
-                        result = pd.DataFrame({'Stations': Select_recep, 'Mine' : option2, 'PPV_Predicted': predictions_model_1,
+                        result = pd.DataFrame({'Stations': Select_recep, 'Mine' : option2, 'PPV_Predicted': predictions_DT_model_1,
                                                'AOP_Predicted': predictions_model_2,
                                                'Date/hour': [datetime.now().strftime("%Y-%m-%d   /  %H:%M:%S")] * len(
                                                    distances)})
