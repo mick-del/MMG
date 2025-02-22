@@ -48,6 +48,7 @@ def afficher_accueil():
 # Fonction pour faire des prédictions
 def faire_prediction(option):
     global scaler
+    global scaler1
     if option == 'Stations préenregistrées':
         st.markdown(
             "<h3 style='text-align: left; color: black;'>Etape 2. Choix de la mine :</h3>",
@@ -396,7 +397,7 @@ def faire_prediction(option):
                     'SD_': [scaled_distance1],'Nholes': [Number_holes]
                 })
                 input_data = scaler.transform(input_data)
-                input_data1 = scaler.transform(input_data1)
+                input_data1 = scaler1.transform(input_data1)
                 # Prédictions des deux modèles (remplacez par vos modèles)
 
                 predictions_RF_model_1 = model_RF_ppv.predict(input_data)
