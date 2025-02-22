@@ -302,8 +302,8 @@ def faire_prediction(option):
                              'Scaled_Dist': scaled_distance,'Nholes': Number_holes
                         })
                         input_data1 = pd.DataFrame({
-                            'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'SD_': scaled_distance1, 'Nholes': Number_holes
+                            'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,'Nholes': Number_holes,
+                            'SD_': scaled_distance1 
                         })
                         input_data = scaler.transform(input_data)
                         input_data1 = scaler1.transform(input_data1)
