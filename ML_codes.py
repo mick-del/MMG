@@ -423,10 +423,10 @@ def faire_prediction(option):
                                         'RF': predictions_RF_model_2,
                                         'XGBRF': predictions_XGBRF_model_2, 'DT': predictions_DT_model_2,
                                         'ANN_MLP': predictions_ANN_MLP_model_2})
-                st.dataframe(new_ID1)
+                #st.dataframe(new_ID1)
                 predictions_model_1 = model_ppv.predict(new_ID1)
                 predictions_model_2 = model_AOP.predict(new_ID2)
-                result = pd.DataFrame({'Stations': new_station_name, 'Mine':Pit, 'PPV_Predicted': predictions_model_1,
+                result = pd.DataFrame({'Stations': new_station_name, 'Mine':Pit, 'PPV_Predicted': predictions_DT_model_1,
                                        'AOP_Predicted': predictions_model_2,
                                        'Date/hour': [datetime.now().strftime("%Y-%m-%d   /  %H:%M:%S")]})
                 st.dataframe(result)
