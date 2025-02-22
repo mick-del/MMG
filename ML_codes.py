@@ -386,7 +386,7 @@ def faire_prediction(option):
                 input_data = pd.DataFrame({
                     'Qmax': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
-                    'scaled_distance': [scaled_distance],
+                    'Scaled_Dist': [scaled_distance],
                     'Nholes': [Number_holes]
                     
                 })
