@@ -27,7 +27,7 @@ def afficher_accueil():
 
     st.markdown("<h1 style='text-align: left; color: red;'>MMG GV-AB Predictor</h1>",
         unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/MMG.png", caption="",
+    st.image("MMG-min.png", caption="",
              use_container_width=True)
     st.markdown("<h2 style='text-align: center; color: black;'>Bienvenu(e) sur l'application MMG GV-AB Predictor !</h2>",
                 unsafe_allow_html=True)
@@ -497,7 +497,7 @@ elif menu == "Nouvelle Prédiction":
                 unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; color: black;'>Bienvenu(e) dans le menu de la  nouvelle prediction</h2>",
                 unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/MMG-min.png", caption="",
+    st.image("G2-1~2.PNG", caption="",
              use_container_width=True)
     st.markdown(
         "<h3 style='text-align: left; color: black;'>1. Choisissez la station de prédiction :</h3>",
