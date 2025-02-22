@@ -384,14 +384,14 @@ def faire_prediction(option):
                 # Préparer les données pour la prédiction
 
                 input_data = pd.DataFrame({
-                    'Q_max': [quantity_of_explosives],
+                    'Qmax': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
                     'scaled_distance': [scaled_distance],
                     'Nholes': [Number_holes]
                     
                 })
                 input_data1 = pd.DataFrame({
-                    'Q_max': [quantity_of_explosives],
+                    'Qmax': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
                     'SD_': [scaled_distance1],'Nholes': [Number_holes]
                 })
