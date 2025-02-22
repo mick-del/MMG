@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import joblib as jb
 from datetime import datetime
+from sklearn.preprocessing import StandardScaler
 # Initialisation d'une liste pour stocker l'historique des prédictions
 model_RF_ppv = jb.load('RF_PPV.joblib')
 model_DT_ppv = jb.load('DT_PPV.joblib')
@@ -110,6 +111,9 @@ def faire_prediction(option):
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
                             'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
+                        scaler = StandardScaler()
+                        input_data = scaler.transform(input_data)
+                        input_data1 = scaler.transform(input_data1)
 
                       # Prédictions des deux modèles (remplacez par vos modèles)
 
@@ -389,7 +393,9 @@ def faire_prediction(option):
                     'Slope_Dist': [new_station_distance],
                     'SD_': [scaled_distance1],'Nholes': [Number_holes]
                 })
-
+                scaler = StandardScaler()
+                input_data = scaler.transform(input_data)
+                input_data1 = scaler.transform(input_data1)
                 # Prédictions des deux modèles (remplacez par vos modèles)
 
                 predictions_RF_model_1 = model_RF_ppv.predict(input_data)
