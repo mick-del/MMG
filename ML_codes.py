@@ -115,9 +115,7 @@ def faire_prediction(option):
                             'Qmax':[quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
                             'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
-                        scaler = StandardScaler()
-                        input_data = scaler.transform(input_data)
-                        input_data1 = scaler.transform(input_data1)
+                        
 
                       # Prédictions des deux modèles (remplacez par vos modèles)
 
