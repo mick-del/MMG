@@ -295,7 +295,7 @@ def faire_prediction(option):
                         })
                         input_data1 = pd.DataFrame({
                             'Qmax': [quantity_of_explosives] * len(distances), 'Slope_Dist': distances,
-                            'Nholes': Number_holes, 'SD_': scaled_distance1
+                            'SD_': scaled_distance1, 'Nholes': Number_holes
                         })
 
                         # Prédictions des deux modèles (remplacez par vos modèles)
@@ -380,14 +380,14 @@ def faire_prediction(option):
                 input_data = pd.DataFrame({
                     'Q_max': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
-                    'Nholes': [Number_holes],
-                    'scaled_distance': [scaled_distance]
+                    'scaled_distance': [scaled_distance],
+                    'Nholes': [Number_holes]
+                    
                 })
                 input_data1 = pd.DataFrame({
                     'Q_max': [quantity_of_explosives],
                     'Slope_Dist': [new_station_distance],
-                    'Nholes': [Number_holes],
-                    'SD_': [scaled_distance1]
+                    'SD_': [scaled_distance1],'Nholes': [Number_holes]
                 })
 
                 # Prédictions des deux modèles (remplacez par vos modèles)
