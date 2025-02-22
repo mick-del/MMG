@@ -497,7 +497,7 @@ elif menu == "Nouvelle Prédiction":
                 unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; color: black;'>Bienvenu(e) dans le menu de la  nouvelle prediction</h2>",
                 unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/MMG-min.png, caption="",
+    st.image("https://github.com/mick-del/MMG/blob/main/MMG-min.png", caption="",
              use_container_width=True)
     st.markdown(
         "<h3 style='text-align: left; color: black;'>1. Choisissez la station de prédiction :</h3>",
