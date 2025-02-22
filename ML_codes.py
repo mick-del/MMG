@@ -47,6 +47,7 @@ def afficher_accueil():
 
 # Fonction pour faire des prédictions
 def faire_prediction(option):
+    global scaler
     if option == 'Stations préenregistrées':
         st.markdown(
             "<h3 style='text-align: left; color: black;'>Etape 2. Choix de la mine :</h3>",
