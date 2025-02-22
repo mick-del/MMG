@@ -394,7 +394,6 @@ def faire_prediction(option):
                     'Slope_Dist': [new_station_distance],
                     'SD_': [scaled_distance1],'Nholes': [Number_holes]
                 })
-                scaler = StandardScaler()
                 input_data = scaler.transform(input_data)
                 input_data1 = scaler.transform(input_data1)
                 # Prédictions des deux modèles (remplacez par vos modèles)
