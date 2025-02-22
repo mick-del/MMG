@@ -41,7 +41,7 @@ def afficher_accueil():
     st.markdown(
         "<p style='text-align: center;'>Utilisez le menu pour naviguer vers de nouvelles prédictions ou consulter l'historique.</p>",
         unsafe_allow_html=True)
-    st.image("https://github.com/mick-del/MMG/blob/main/DJI_0736-min.JPG", caption="Mine de Kinsevere", use_container_width=True)
+    st.image("DJI_0736-min.JPG", caption="Mine de Kinsevere", use_container_width=True)
 
 # Fonction pour faire des prédictions
 def faire_prediction(option):
